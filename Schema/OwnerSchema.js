@@ -1,0 +1,91 @@
+import mongoose from 'mongoose';
+
+const OwnerSchema = new mongoose.Schema({
+    Type:{
+        type:String,
+        require:true,
+    },
+    Wallet:{
+        type:String,
+        require:true,
+    },
+    Photo:{
+        type:String,
+        require:true,
+    },
+    FirstName:{
+        type:String,
+        require:true,
+    },
+    LastName:{
+        type:String,
+        require:true,
+    },
+    ArtistNick:{
+        type:String,
+        require:true,
+    },
+    CreativeInvolvement:{
+        type:String,
+        require:true,
+    },
+    Plan:{
+        type:String,
+        require:true,
+    },
+    Bio:{
+        type:String,
+        require:true,
+    },
+    CompanyName:{
+        type:String,
+        require:true,
+    },
+    Title:{
+        type:String,
+        require:true,
+    },
+    ContactFirstName:{
+        type:String,
+        require:true,
+    },
+    ContactLastName:{
+        type:String,
+        require:true,
+    },
+    CompanyEmail:{
+        type:String,
+        require:true,
+    },
+    CompanyType:{
+        type:String,
+        require:true,
+    },
+    Contact:{
+        type:String,
+        require:true,
+    },
+    Phone:{
+        type:String,
+        require:true,
+    },
+    MetaRules:{
+        type:String,
+        // require:true,
+    },
+    GameFiRules:{
+        type:String,
+        // require:true,
+    },
+    PhysicalReproduction:{
+        type:String,
+        // require:true,
+    },
+    Quantityproduced:{
+        type:String,
+    },
+    Plannedsales:{
+        type:String,
+    }
+})
+export default mongoose.model('Owner', OwnerSchema)
